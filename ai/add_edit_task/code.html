@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#f8f9ff;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-tertiary-container":"#67f4b7","on-tertiary":"#ffffff","on-primary-container":"#dad7ff","tertiary-container":"#006e4b","tertiary-fixed":"#6ffbbe","tertiary-fixed-dim":"#4edea3","surface":"#f8f9ff","surface-container-high":"#dce9ff","primary-fixed-dim":"#c3c0ff","secondary-fixed-dim":"#c0c1ff","surface-container-low":"#eff4ff","on-surface-variant":"#464555","on-tertiary-fixed":"#002113","on-secondary-fixed":"#07006c","surface-bright":"#f8f9ff","error-container":"#ffdad6","on-error-container":"#93000a","on-error":"#ffffff","secondary-container":"#6063ee","secondary-fixed":"#e1e0ff","surface-container-highest":"#d3e4fe","surface-container":"#e5eeff","surface-dim":"#cbdbf5","error":"#ba1a1a","inverse-primary":"#c3c0ff","surface-variant":"#d3e4fe","on-primary-fixed-variant":"#3323cc","primary-container":"#4f46e5","surface-container-lowest":"#ffffff","on-surface":"#0b1c30","primary":"#3525cd","inverse-on-surface":"#eaf1ff","primary-fixed":"#e2dfff","on-primary":"#ffffff","on-background":"#0b1c30","inverse-surface":"#213145","on-secondary-fixed-variant":"#2f2ebe","on-secondary":"#ffffff","outline-variant":"#c7c4d8","on-primary-fixed":"#0f0069","on-tertiary-fixed-variant":"#005236","background":"#f8f9ff","secondary":"#4648d4","outline":"#777587","on-secondary-container":"#fffbff","tertiary":"#005338","surface-tint":"#4d44e3"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-xl":"2rem","gutter":"1rem","space-sm":"0.5rem","space-xs":"0.25rem","space-lg":"1.5rem","margin":"1.25rem","space-md":"1rem"},fontFamily:{"body-md":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"display":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"]},fontSize:{"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"title-md":["17px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["30px",{"lineHeight":"38px","letterSpacing":"-0.025em","fontWeight":"700"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.05em","fontWeight":"700"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"600"}],"display":["36px",{"lineHeight":"44px","letterSpacing":"-0.03em","fontWeight":"700"}],"body-sm":["13px",{"lineHeight":"18px","letterSpacing":"0.005em","fontWeight":"400"}],"label-lg":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"400"}],"label-md":["11px",{"lineHeight":"16px","letterSpacing":"0.03em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl pt-safe"><div class="h-16 px-margin flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-sm"><button aria-label="Go back" class="w-11 h-11 -ml-2 flex items-center justify-center text-on-surface rounded-full hover:bg-surface-container transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[22px]">arrow_back_ios_new</span></button><img alt="TaskFlow App Icon" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W7-yXZZ_xAgWmsBNYGLJANA08Ec3avJTMNN9sO7dDAO5xV9C_mhdT1-B1em-OttnEvCojzEPmS3fern6xcnW-l5Xe8i9zS6kr-NI42lspHQKEhdIWTrRcdjpBl96iJRY8kCjl2G-TEfj5Ye7TPYs7o2DsTebxQASuG_DWFCCGobAk66tBsoaS3Qw_xJxOnVNGdnCjXl6xTRSF1AfFFWO647zvM5G7mOnjR7clrQWIXWGUUhFWErABD-5Aq"/><h1 class="font-title-md text-title-md text-on-surface truncate">New Task</h1></div><div class="flex items-center gap-space-xs"><button aria-label="Theme Switcher" class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-on-surface rounded-full transition-colors" onclick="document.documentElement.classList.toggle('dark')"><span class="material-symbols-outlined text-[20px]">dark_mode</span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDNoUl84j7JsI_bu_HA8Lvf3GdECVLyI66v0GJN_ejKEtqcxRTMpXO5JmTaG46YWPi9SMFZ40Eg1jsk-1E6mfjmxyiVsH3YXi8MF6wrkNoA6elz6qcrsArYcVG4tqxy8u2SO35r0RnL-j6Z0sH64Ifvz0XiAFVcugvmG1Ia_PKm5Zmk7PDMCeqaS64sppK9FdjAS-PMbN3phHfoAAHz4qvknypPmolQgDmEgo6u1yhErp0Q5WfOlhZPw"/></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe px-margin bg-surface"><div class="flex flex-col w-full pb-8">
+<!-- Mode Toggle Header Row -->
+<div class="flex items-center justify-between py-space-sm mb-space-md">
+<button class="text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-colors py-2 px-1 focus:outline-none min-h-[44px] flex items-center" onclick="history.back()" type="button">
+      Cancel
+    </button>
+<!-- Switchable Mode Badge -->
+<div class="flex items-center bg-surface-container p-1 rounded-full shadow-sm" id="modeBadgeGroup">
+<button class="px-3 py-1 rounded-full font-label-md text-label-md bg-surface-container-lowest text-primary shadow-sm transition-all duration-200" id="modeAddBtn" onclick="toggleTaskMode('add')" type="button">
+        New Task
+      </button>
+<button class="px-3 py-1 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all duration-200" id="modeEditBtn" onclick="toggleTaskMode('edit')" type="button">
+        Edit Task
+      </button>
+</div>
+<button class="text-on-surface-variant hover:text-error font-label-lg text-label-lg transition-colors py-2 px-1 min-h-[44px] flex items-center" onclick="resetForm()" type="button">
+      Clear
+    </button>
+</div>
+<form class="flex flex-col gap-space-lg" id="taskForm" onsubmit="event.preventDefault(); saveTask();">
+<!-- Title Section -->
+<div class="flex flex-col gap-space-xs bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface-variant tracking-wider uppercase" for="taskTitle">
+          Task Title
+        </label>
+<span class="font-label-sm text-label-sm text-on-surface-variant" id="titleCounter">0/80</span>
+</div>
+<div class="relative flex items-center mt-1">
+<input class="w-full bg-surface-container-low focus:bg-surface-container-lowest text-on-surface font-title-md text-title-md placeholder:text-on-surface-variant/50 rounded-lg px-4 py-3 min-h-[48px] transition-all outline-none" id="taskTitle" maxlength="80" oninput="updateTitleCount(this)" placeholder="e.g., Finalize mobile design guidelines" type="text"/>
+</div>
+</div>
+<!-- Description & Context Section -->
+<div class="flex flex-col gap-space-xs bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div class="flex items-center justify-between mb-1">
+<label class="font-label-md text-label-md text-on-surface-variant tracking-wider uppercase" for="taskDesc">
+          Description &amp; Notes
+        </label>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">edit_note</span>
+</div>
+<textarea class="w-full bg-surface-container-low focus:bg-surface-container-lowest text-on-surface font-body-md text-body-md placeholder:text-on-surface-variant/50 rounded-lg p-3 min-h-[96px] resize-none transition-all outline-none" id="taskDesc" placeholder="Add context, subtasks, notes, or links..." rows="3"></textarea>
+<!-- Quick Action Formatting Chips -->
+<div class="flex items-center gap-space-xs pt-2 overflow-x-auto">
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors min-h-[36px]" onclick="insertSyntax('- [ ] ')" type="button">
+<span class="material-symbols-outlined text-[16px]">checklist</span>
+<span>Checklist</span>
+</button>
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors min-h-[36px]" onclick="triggerAction('Attachment added')" type="button">
+<span class="material-symbols-outlined text-[16px]">attach_file</span>
+<span>Attachment</span>
+</button>
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors min-h-[36px]" onclick="insertSyntax('https://')" type="button">
+<span class="material-symbols-outlined text-[16px]">link</span>
+<span>Link</span>
+</button>
+</div>
+</div>
+<!-- Date & Time Row -->
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Date Picker Trigger -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-2">Due Date</span>
+<button class="flex items-center justify-between w-full min-h-[48px] px-3 py-2 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors" id="datePickerBtn" onclick="toggleDateSelection()" type="button">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-primary text-[20px]">calendar_today</span>
+<span class="font-body-md text-body-md font-semibold truncate" id="dateLabel">Today, Oct 24</span>
+</div>
+</button>
+</div>
+<!-- Time Picker Trigger -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-2">Time</span>
+<button class="flex items-center justify-between w-full min-h-[48px] px-3 py-2 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors" id="timePickerBtn" onclick="toggleTimeSelection()" type="button">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-primary text-[20px]">schedule</span>
+<span class="font-body-md text-body-md font-semibold truncate" id="timeLabel">02:30 PM</span>
+</div>
+</button>
+</div>
+</div>
+<!-- Priority Selection Segment -->
+<div class="flex flex-col gap-space-xs bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div class="flex items-center justify-between mb-1">
+<label class="font-label-md text-label-md text-on-surface-variant tracking-wider uppercase">Priority Level</label>
+<span class="font-label-sm text-label-sm text-error font-semibold" id="priorityStatusNote">Critical Impact</span>
+</div>
+<div class="grid grid-cols-3 gap-space-xs" role="radiogroup">
+<!-- Low Priority -->
+<button class="flex items-center justify-center gap-1.5 min-h-[48px] py-2 px-3 rounded-lg bg-surface-container-low text-on-surface-variant font-label-lg text-label-lg transition-all" id="prio-low" onclick="selectPriority('low')" type="button">
+<span class="material-symbols-outlined text-[18px]">low_priority</span>
+<span>Low</span>
+</button>
+<!-- Medium Priority -->
+<button class="flex items-center justify-center gap-1.5 min-h-[48px] py-2 px-3 rounded-lg bg-surface-container-low text-on-surface-variant font-label-lg text-label-lg transition-all" id="prio-med" onclick="selectPriority('med')" type="button">
+<span class="material-symbols-outlined text-[18px] text-amber-500">flag</span>
+<span>Medium</span>
+</button>
+<!-- High Priority (Active State by Default) -->
+<button class="flex items-center justify-center gap-1.5 min-h-[48px] py-2 px-3 rounded-lg bg-error-container text-error font-label-lg text-label-lg shadow-sm transition-all" id="prio-high" onclick="selectPriority('high')" type="button">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">priority_high</span>
+<span>High</span>
+</button>
+</div>
+</div>
+<!-- Category Selection -->
+<div class="flex flex-col gap-space-xs bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div class="flex items-center justify-between mb-1">
+<label class="font-label-md text-label-md text-on-surface-variant tracking-wider uppercase">Category / Project</label>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">folder_open</span>
+</div>
+<div class="flex items-center gap-2 overflow-x-auto py-1">
+<button class="category-chip px-3.5 py-2 rounded-full font-label-lg text-label-lg bg-primary-container text-on-primary shadow-sm flex items-center gap-1.5 min-h-[44px] shrink-0 transition-all" onclick="selectCategory(this)" type="button">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed"></span>
+<span>Work</span>
+</button>
+<button class="category-chip px-3.5 py-2 rounded-full font-label-lg text-label-lg bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center gap-1.5 min-h-[44px] shrink-0 transition-all" onclick="selectCategory(this)" type="button">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>Personal</span>
+</button>
+<button class="category-chip px-3.5 py-2 rounded-full font-label-lg text-label-lg bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center gap-1.5 min-h-[44px] shrink-0 transition-all" onclick="selectCategory(this)" type="button">
+<span class="w-2 h-2 rounded-full bg-primary-fixed-dim"></span>
+<span>Design</span>
+</button>
+<button class="category-chip px-3.5 py-2 rounded-full font-label-lg text-label-lg bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center gap-1.5 min-h-[44px] shrink-0 transition-all" onclick="selectCategory(this)" type="button">
+<span class="w-2 h-2 rounded-full bg-tertiary-container"></span>
+<span>Finance</span>
+</button>
+<button class="px-3.5 py-2 rounded-full font-label-lg text-label-lg bg-surface-container-low text-primary hover:bg-surface-container flex items-center gap-1 min-h-[44px] shrink-0 transition-all" onclick="addNewCategoryPrompt()" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>New Category</span>
+</button>
+</div>
+</div>
+<!-- Reminder & Notification Preferences Card -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between min-h-[48px]">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">notifications_active</span>
+</div>
+<div>
+<div class="font-body-md text-body-md font-semibold text-on-surface">Reminder Alert</div>
+<div class="font-label-md text-label-md text-on-surface-variant" id="reminderSubtitle">15 minutes before</div>
+</div>
+</div>
+<!-- Custom Touch Accessible Toggle -->
+<button aria-checked="true" class="w-12 h-7 rounded-full bg-primary-container p-0.5 transition-colors focus:outline-none flex items-center" id="reminderToggle" onclick="toggleReminderState()" role="switch" type="button">
+<div class="w-6 h-6 rounded-full bg-surface-container-lowest shadow-sm transform translate-x-5 transition-transform" id="reminderThumb"></div>
+</button>
+</div>
+<!-- Secondary vibration audio indicator pill -->
+<div class="flex items-center justify-between pt-2 border-t-0 bg-surface-container-low px-3 py-2 rounded-lg">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">vibration</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Haptic alert enabled</span>
+</div>
+<span class="font-label-sm text-label-sm uppercase bg-surface-container-highest px-2 py-0.5 rounded text-on-surface">Standard</span>
+</div>
+</div>
+<!-- Contextual Pro-Tip / Empty Guide -->
+<div class="flex items-center gap-2.5 p-space-sm bg-surface-container-low rounded-lg text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[18px]">tips_and_updates</span>
+<span class="font-body-sm text-body-sm">
+<span class="font-semibold text-on-surface">Pro-tip:</span> Press Enter in the description to instantly generate structured sub-steps.
+      </span>
+</div>
+<!-- Sticky / Bottom Action Area -->
+<div class="flex flex-col gap-2 pt-2">
+<button class="w-full min-h-[48px] py-3 px-6 rounded-xl bg-primary-container text-on-primary font-title-md text-title-md text-center shadow-md active:scale-[0.98] transition-all flex items-center justify-center gap-2" id="saveButton" type="submit">
+<span class="material-symbols-outlined text-[20px]">check</span>
+<span id="saveButtonLabel">Save Task</span>
+</button>
+<button class="w-full min-h-[44px] py-2.5 px-4 rounded-xl bg-transparent hover:bg-surface-container text-on-surface-variant font-label-lg text-label-lg text-center transition-colors" onclick="saveDraft()" type="button">
+        Save as Draft
+      </button>
+</div>
+</form>
+</div>
+<script>
+  let reminderActive = true;
+  let activePriority = 'high';
+
+  function updateTitleCount(input) {
+    const counter = document.getElementById('titleCounter');
+    counter.textContent = `${input.value.length}/80`;
+  }
+
+  function toggleTaskMode(mode) {
+    const addBtn = document.getElementById('modeAddBtn');
+    const editBtn = document.getElementById('modeEditBtn');
+    const titleInput = document.getElementById('taskTitle');
+    const descInput = document.getElementById('taskDesc');
+    const saveLabel = document.getElementById('saveButtonLabel');
+
+    if (mode === 'edit') {
+      editBtn.className = "px-3 py-1 rounded-full font-label-md text-label-md bg-surface-container-lowest text-primary shadow-sm transition-all duration-200";
+      addBtn.className = "px-3 py-1 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all duration-200";
+      titleInput.value = "Finalize mobile design guidelines";
+      descInput.value = "- [x] Color palette tokens\n- [ ] Micro-interactions specs";
+      saveLabel.textContent = "Update Task";
+      updateTitleCount(titleInput);
+    } else {
+      addBtn.className = "px-3 py-1 rounded-full font-label-md text-label-md bg-surface-container-lowest text-primary shadow-sm transition-all duration-200";
+      editBtn.className = "px-3 py-1 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all duration-200";
+      titleInput.value = "";
+      descInput.value = "";
+      saveLabel.textContent = "Save Task";
+      updateTitleCount(titleInput);
+    }
+  }
+
+  function selectPriority(level) {
+    activePriority = level;
+    const low = document.getElementById('prio-low');
+    const med = document.getElementById('prio-med');
+    const high = document.getElementById('prio-high');
+    const note = document.getElementById('priorityStatusNote');
+
+    // Reset styles
+    low.className = "flex items-center justify-center gap-1.5 min-h-[48px] py-2 px-3 rounded-lg bg-surface-container-low text-on-surface-variant font-label-lg text-label-lg transition-all";
+    med.className = "flex items-center justify-center gap-1.5 min-h-[48px] py-2 px-3 rounded-lg bg-surface-container-low text-on-surface-variant font-label-lg text-label-lg transition-all";
+    high.className = "flex items-center justify-center gap-1.5 min-h-[48px] py-2 px-3 rounded-lg bg-surface-container-low text-on-surface-variant font-label-lg text-label-lg transition-all";
+
+    if (level === 'low') {
+      low.className = "flex items-center justify-center gap-1.5 min-h-[48px] py-2 px-3 rounded-lg bg-surface-container-highest text-on-surface font-label-lg text-label-lg shadow-sm transition-all";
+      note.textContent = "Standard Velocity";
+      note.className = "font-label-sm text-label-sm text-on-surface-variant font-medium";
+    } else if (level === 'med') {
+      med.className = "flex items-center justify-center gap-1.5 min-h-[48px] py-2 px-3 rounded-lg bg-amber-50 text-amber-900 font-label-lg text-label-lg shadow-sm transition-all";
+      note.textContent = "Moderate Priority";
+      note.className = "font-label-sm text-label-sm text-amber-700 font-medium";
+    } else if (level === 'high') {
+      high.className = "flex items-center justify-center gap-1.5 min-h-[48px] py-2 px-3 rounded-lg bg-error-container text-error font-label-lg text-label-lg shadow-sm transition-all";
+      note.textContent = "Critical Impact";
+      note.className = "font-label-sm text-label-sm text-error font-semibold";
+    }
+  }
+
+  function selectCategory(el) {
+    document.querySelectorAll('.category-chip').forEach(chip => {
+      chip.className = "category-chip px-3.5 py-2 rounded-full font-label-lg text-label-lg bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center gap-1.5 min-h-[44px] shrink-0 transition-all";
+    });
+    el.className = "category-chip px-3.5 py-2 rounded-full font-label-lg text-label-lg bg-primary-container text-on-primary shadow-sm flex items-center gap-1.5 min-h-[44px] shrink-0 transition-all";
+  }
+
+  function addNewCategoryPrompt() {
+    const catName = prompt("Enter new category name:");
+    if (catName && catName.trim()) {
+      const container = document.querySelector('.category-chip').parentElement;
+      const newBtn = document.createElement('button');
+      newBtn.type = "button";
+      newBtn.className = "category-chip px-3.5 py-2 rounded-full font-label-lg text-label-lg bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center gap-1.5 min-h-[44px] shrink-0 transition-all";
+      newBtn.onclick = function() { selectCategory(this); };
+      newBtn.innerHTML = `<span class="w-2 h-2 rounded-full bg-secondary-container"></span><span>${catName.trim()}</span>`;
+      container.insertBefore(newBtn, container.lastElementChild);
+      selectCategory(newBtn);
+    }
+  }
+
+  function toggleReminderState() {
+    reminderActive = !reminderActive;
+    const btn = document.getElementById('reminderToggle');
+    const thumb = document.getElementById('reminderThumb');
+    const subtitle = document.getElementById('reminderSubtitle');
+
+    btn.setAttribute('aria-checked', reminderActive);
+    if (reminderActive) {
+      btn.className = "w-12 h-7 rounded-full bg-primary-container p-0.5 transition-colors focus:outline-none flex items-center";
+      thumb.className = "w-6 h-6 rounded-full bg-surface-container-lowest shadow-sm transform translate-x-5 transition-transform";
+      subtitle.textContent = "15 minutes before";
+      subtitle.className = "font-label-md text-label-md text-on-surface-variant";
+    } else {
+      btn.className = "w-12 h-7 rounded-full bg-surface-container-high p-0.5 transition-colors focus:outline-none flex items-center";
+      thumb.className = "w-6 h-6 rounded-full bg-surface-container-lowest shadow-sm transform translate-x-0 transition-transform";
+      subtitle.textContent = "Notifications off";
+      subtitle.className = "font-label-md text-label-md text-on-surface-variant/60";
+    }
+  }
+
+  function toggleDateSelection() {
+    const label = document.getElementById('dateLabel');
+    if (label.textContent === 'Today, Oct 24') {
+      label.textContent = 'Tomorrow, Oct 25';
+    } else {
+      label.textContent = 'Today, Oct 24';
+    }
+  }
+
+  function toggleTimeSelection() {
+    const label = document.getElementById('timeLabel');
+    if (label.textContent === '02:30 PM') {
+      label.textContent = '05:00 PM';
+    } else {
+      label.textContent = '02:30 PM';
+    }
+  }
+
+  function insertSyntax(snippet) {
+    const desc = document.getElementById('taskDesc');
+    desc.focus();
+    const start = desc.selectionStart;
+    const end = desc.selectionEnd;
+    desc.value = desc.value.substring(0, start) + snippet + desc.value.substring(end);
+    desc.selectionStart = desc.selectionEnd = start + snippet.length;
+  }
+
+  function triggerAction(msg) {
+    const tip = document.getElementById('taskForm');
+    const notification = document.createElement('div');
+    notification.className = "fixed bottom-6 left-1/2 transform -translate-x-1/2 px-4 py-2 bg-inverse-surface text-inverse-on-surface rounded-full font-label-md text-label-md shadow-lg z-50 flex items-center gap-2";
+    notification.innerHTML = `<span class="material-symbols-outlined text-[16px] text-tertiary-fixed">check_circle</span><span>${msg}</span>`;
+    document.body.appendChild(notification);
+    setTimeout(() => notification.remove(), 2000);
+  }
+
+  function saveTask() {
+    const title = document.getElementById('taskTitle').value;
+    if (!title.trim()) {
+      document.getElementById('taskTitle').focus();
+      triggerAction('Please add a task title');
+      return;
+    }
+    triggerAction('Task saved successfully');
+    setTimeout(() => history.back(), 700);
+  }
+
+  function saveDraft() {
+    triggerAction('Saved to local drafts');
+  }
+
+  function resetForm() {
+    document.getElementById('taskTitle').value = '';
+    document.getElementById('taskDesc').value = '';
+    updateTitleCount(document.getElementById('taskTitle'));
+    triggerAction('Form cleared');
+  }
+</script></main></body></html>

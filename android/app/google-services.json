@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "261185007218",
+    "project_id": "albarakah-test",
+    "storage_bucket": "albarakah-test.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:261185007218:android:4eb6b978dc361b2c52dceb",
+        "android_client_info": {
+          "package_name": "com.example.firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqJmBFlWDfUVecpaHgS3TbHyOoY2BQxJ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
